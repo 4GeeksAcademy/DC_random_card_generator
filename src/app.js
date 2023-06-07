@@ -46,11 +46,11 @@ window.onload = function() {
   let num = document.querySelector(".num");
   num.innerHTML = newNum;
 
-  // ---temporizador---
+  // ---temporizador--- // Tengo la sensacion de que se acelera.
 
-  setTimeout(function() {
-    newCard();
-  }, 10000);
+  // setTimeout(function() {
+  //   newCard();
+  // }, 10000);
 };
 
 // ---nueva carta---
@@ -64,3 +64,7 @@ function newCard() {
 let btn = document
   .getElementById("btn-card")
   .addEventListener("click", newCard);
+
+let altura = document.getElementById("alt");
+let card = document.querySelector(".card");
+card.style.height = `${altura.value}`;
