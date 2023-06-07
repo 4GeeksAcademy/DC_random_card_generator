@@ -48,15 +48,14 @@ window.onload = function() {
 
   // ---temporizador--- // Tengo la sensacion de que se acelera.
 
-  // setTimeout(function() {
-  //   newCard();
-  // }, 10000);
+  setTimeout(function() {
+    newCard();
+  }, 10000);
 };
 
 // ---nueva carta---
-
+const newCarta = document.getElementById("carta");
 function newCard() {
-  let newCarta = document.getElementById("carta");
   window.onload(newCarta);
 }
 
@@ -65,6 +64,28 @@ let btn = document
   .getElementById("btn-card")
   .addEventListener("click", newCard);
 
-let altura = document.getElementById("alt");
-let card = document.querySelector(".card");
-card.style.height = `${altura.value}`;
+// ---modificando alto---
+
+const newAlt = document.getElementById("alt");
+newAlt.addEventListener("keydown", e => {
+  if (e.keyCode === 13) {
+    alt();
+  }
+});
+
+const alt = () => {
+  newCarta.style.height = `${newAlt.value}px`;
+};
+
+// ---modificando ancho---
+
+const newAnc = document.getElementById("anc");
+newAnc.addEventListener("keydown", e => {
+  if (e.keyCode === 13) {
+    anc();
+  }
+});
+
+const anc = () => {
+  newCarta.style.width = `${newAnc.value}px`;
+};
