@@ -46,6 +46,21 @@ window.onload = function() {
   let num = document.querySelector(".num");
   num.innerHTML = newNum;
 };
+
+function newCard() {
+  let newCarta = document.getElementById("carta");
+  let cuerpito = document.body.appendChild(newCarta);
+
+  console.log(newCarta);
+}
+
+// ---boton---
 let btn = document
   .getElementById("btn-card")
-  .addEventListener("click", window.onload);
+  .addEventListener("click", newCard);
+
+// ---temporizador---
+
+// setTimeout(function() {
+//   window.onload();
+// }, 2000);
