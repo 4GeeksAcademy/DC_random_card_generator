@@ -14,3 +14,8 @@
 .num {
   font-size: 150px;
 }
+
+#btn-card {
+  background-color: rgb(8, 107, 74);
+  border-color: gold;
+}

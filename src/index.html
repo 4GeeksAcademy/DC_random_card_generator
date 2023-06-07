@@ -14,25 +14,29 @@
   </head>
   <body class="bg-success">
     <!-- ---navBar--- -->
-    <ul class="nav">
-      <li class="nav-item">
-        <!-- ---boton--- -->
-        <button type="button" id="btn-card" class="btn btn-secondary ">
-          ¡¡Carta!!
-        </button>
-      </li>
-      <li>
-        <label>Alto</label>
-        <input class="picker" type="text" id="alt" />
-      </li>
-      <li>
-        <label>Ancho</label>
-        <input class="picker" type="text" id="anc" />
+    <ul class="nav ">
+      <li class="nav-item "></li>
+
+        <li class="m-3 shadow-lg ">
+          <label >Alto</label>
+          <input class="picker" type="text" id="alt" placeholder="Introduce el alto en px"/>
+        </li>
+              <!-- ---boton--- -->
+        <li class="m-auto ">  
+          <button type="button" id="btn-card" class="btn btn-secondary btn-lg mt-5 shadow-lg ">
+            ¡¡Carta!!
+          </button>
+        </li>
+                <!-- ---boton--- -->
+        <li class="m-3 shadow-lg ">
+          <label >Ancho</label>
+          <input class="picker" type="text" id="anc" placeholder="Introduce el ancho en px"/>
+        </li>
       </li>
     </ul>
 
     <!-- ---card--- -->
-    <div class="card" id="carta">
+    <div class="card shadow-lg " id="carta">
       <div class="top display-2 ps-3">
         <h1></h1>
       </div>

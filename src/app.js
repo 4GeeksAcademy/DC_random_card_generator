@@ -48,9 +48,9 @@ window.onload = function() {
 
   // ---temporizador--- // Tengo la sensacion de que se acelera.
 
-  setTimeout(function() {
-    newCard();
-  }, 10000);
+  // setTimeout(function() {
+  //   newCard();
+  // }, 10000);
 };
 
 // ---nueva carta---
